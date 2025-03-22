@@ -39,6 +39,7 @@
   <PropertyGroup>
     <CompilerHost Condition="'$(CompilerHost)' == '' and '$(NETCoreSdkRuntimeIdentifier)' == 'win-x64'">windows-x64</CompilerHost>
     <CompilerHost Condition="'$(CompilerHost)' == '' and '$(NETCoreSdkRuntimeIdentifier)' == 'linux-x64'">linux-glibc-x64</CompilerHost>
+    <CompilerHost Condition="'$(CompilerHost)' == '' and '$(NETCoreSdkRuntimeIdentifier)' == 'ubuntu.24.04-x64'">linux-glibc-x64</CompilerHost>
     <DownloadCachePath Condition="$(DownloadCachePath) == ''">$(BaseIntermediateOutputPath)</DownloadCachePath>
   </PropertyGroup>
 
